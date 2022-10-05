@@ -1,9 +1,7 @@
 import React from 'react';
 // import './App.css';
 import Accordion from "./components/Accordion/Accordion";
-import Header from "./components/Header/Header";
 import {Rating} from "./components/Rating/Rating";
-import {Technologies} from "./components/Technologies/Technologies";
 
 // function declaration - для объявления компонентов,
 // функции-компоненты объявляются с заглавной буквы
@@ -25,8 +23,6 @@ function App() {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
-            <Header/>
-            <Technologies/>
         </div>
     );
 }
