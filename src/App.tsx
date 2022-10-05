@@ -1,16 +1,15 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
 import Accordion from "./components/Accordion/Accordion";
+import Header from "./components/Header/Header";
 import {Rating} from "./components/Rating/Rating";
-import {Header} from "./components/Header/Header";
 import {Technologies} from "./components/Technologies/Technologies";
-
 
 // function declaration - для объявления компонентов,
 // функции-компоненты объявляются с заглавной буквы
-function App() { // App желтым, так как где то используется
+// Стрелочные функции используем для обработчика событии
+function App() {
     console.log("App rendering")
-    // возвращает jsx(div)
     return (
         <div className="App">
             <PageTitle title={"This is APP component"}/>
@@ -38,22 +37,7 @@ type PageTitleType = {
 
 function PageTitle(props: PageTitleType) {
     console.log("PageTitle rendering")
-    return <h1>{props.title}</h1> // <></> - можно оборачивать в <></> если без <div>
+    return <h1>{props.title}</h1>
 }
-
-// Rating не имортированли, тк она есть в этом файле
-
-
-// Стрелочные функции используем для обработчика событии
-// const App=()=> {
-//     //полезное что-то
-//     // возвращает jsx(div)
-//     return (
-//         <div className="App">
-//             this is APP co
-//         </div>
-//     );
-// }
-
 
 export default App;
